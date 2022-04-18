@@ -3,8 +3,8 @@ const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
 
 function handleLoginBtnClick(){
-    console.dir(loginInput.value)
-    console.log("click!!!")
+    const username = loginInput.value;
+    console.log(username)
 }
 
 loginButton.addEventListener("click",handleLoginBtnClick)
