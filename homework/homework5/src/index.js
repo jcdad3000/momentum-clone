@@ -26,8 +26,7 @@ const colors = [
   function handleClick(){
     const leftColor = Math.floor(Math.random()*colors.length);
     const rightColor = Math.floor(Math.random()*colors.length);
-    document.body.style.backgroundImage= `linear-gradient(0.25turn,${colors[leftColor]},${colors[rightColor]})`
-    console.log(colors[rightColor])
+    document.body.style.backgroundImage= `linear-gradient(0.25turn,${colors[leftColor]},${colors[rightColor]})`    
   }
 
   changeColorBtn.addEventListener("click",handleClick)
