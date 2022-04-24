@@ -1,3 +1,79 @@
 .hidden {
-  display:none;
+  display: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#clock {
+  font-size: 100px;
+  margin-top: 200px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#login-form input {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 3px solid white;
+}
+
+input::placeholder {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+#greeting {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#todo-form input {
+  margin-top: 40px;
+  border: none;
+  width: 500px;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 3px solid white;
+}
+
+#todo-list li {
+  margin-top: 20px;
+  color: yellow;
+  text-shadow: 1px 1px 10px black;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 30px;
+  border-bottom: 3px solid white;
+}
+
+#todo-list li button {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#quote {
+  margin-top: 70px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#quote span:last-child {
+  font-style: italic;
+}
+
+#weather {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 20px;
 }

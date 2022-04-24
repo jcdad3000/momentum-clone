@@ -12,7 +12,11 @@ function saveToDos() {
 
 function deleteTodo(event) {
   const li = event.target.parentElement
+  console.log(li.id)
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id))
+  console.log(toDos)
   li.remove()
+  saveToDos()
 }
 function paintToDo(newTodo) {
   const li = document.createElement('li')
